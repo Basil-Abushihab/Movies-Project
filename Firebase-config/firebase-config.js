@@ -6,7 +6,7 @@ import {
   sendEmailVerificationLink,
   signInWithEmailAndPassword,
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-import { getDatabase,ref,set,child,get } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+import { getDatabase,ref,set,child,onValue } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -32,7 +32,7 @@ const auth = getAuth(app);
 const database = getDatabase(app);
 const reference=ref;
 const addData=set;
-const retrieveData=get;
+const retrieveData=onValue;
 const sendEmailLink=sendEmailVerificationLink;
 const loginFirebase=signInWithEmailAndPassword;
 export { app, createUser, auth ,database,reference,addData,retrieveData,sendEmailLink,loginFirebase,child};
