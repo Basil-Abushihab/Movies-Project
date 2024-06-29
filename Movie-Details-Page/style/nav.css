@@ -1,11 +1,7 @@
-html {
-    font-family:manrope;
-}
-
 body {
     margin: 0;
     padding: 0;
-    
+    font-family: 'Manrope', sans-serif;
 }
 .display{
     display: sticky;
