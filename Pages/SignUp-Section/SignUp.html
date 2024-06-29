@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style/Login-general-style.css" />
+    <link rel="stylesheet" href="style/Signup-general-style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style/Login-Section-Style.css" />
+    <link rel="stylesheet" href="style/Signup-Section-Style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
@@ -20,28 +20,50 @@
     />
     <link rel="stylesheet" href="style/Buttons.css" />
     <link rel="stylesheet" href="style/responsive.css" />
+    
   </head>
   <body>
-    <div id="Login-section">
-      <div id="Login-Fields">
-        <img src="assets/LoginLogo.png" alt="" style="margin-bottom: 3rem" />
-        <div id="Login-form-section">
-          <form id="Login-Form">
+    <div id="Signup-section">
+      <div id="Signup-Fields">
+        <img src="assets/SignUp.png
+        " alt="" style="margin-bottom: 3rem" />
+        <div id="Signup-form-section">
+          <form id="Signup-Form">
+            <label class="label">First Name</label>
+            
+            <br /><br />
+            <input type="Text" name="FirstName" class="Signup-TextFields" placeholder="   Enter your First Name" />
+            <br /><br />
+            <label class="label">Last Name</label>
+            <br /><br />
+            <input type="Text" name="LastName" class="Signup-TextFields" placeholder="   Enter your Last Name" />
+            <br /><br />
             <label class="label">Email</label>
             <br /><br />
-            <input type="email" name="Email" class="Login-TextFields" placeholder="   Enter your Email"  />
+            <input type="email" name="Email" class="Signup-TextFields" placeholder="   Enter your email" />
+            <br /><br />
+            <label class="label">Bio</label>
+            <br /><br />
+            <input type="text" name="Bio" class="Signup-TextFields" placeholder="   Tell everyone about your self with this bio" />
             <br /><br />
             <label class="label">Password</label>
             <br /><br />
-            <input type="password" name="Email" class="Login-TextFields" placeholder="   Enter your Password"/>
+            <input type="password" name="password" class="Signup-TextFields" placeholder="   Enter your Password"/>
             <br /><br />
-            <button class="Signup-Button">Login</button>
+            
+
+            <label class="label">Repeat-Password</label>
+            <br /><br />
+            <input type="password" name="repeate-password" class="Signup-TextFields" placeholder="   Enter your Password"/>
+            <br /><br />
+            
+            <button id="Signup-Button">Signup</button>
             <br />
             <hr style="color: black; height: 2px" />
 
-            <button id="Login-Google">
+            <button id="Signup-Google">
               <img src="assets/GmailIcon.png" alt="" />
-              Login with Google
+              Signup with Google
             </button>
           </form>
         </div>
@@ -54,7 +76,9 @@
       </div>
     </div>
     
-    <script src="javascript/imagesAnimation.js"></script>
+    <script src="javascript/pageManipulation/imagesAnimation.js"></script>
+    <script type="module" src="javascript/signupController/signupPageController.js"></script>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
