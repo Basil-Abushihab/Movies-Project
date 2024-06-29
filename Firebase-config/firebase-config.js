@@ -14,6 +14,7 @@ import {
   onValue,
   query,
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+import { getStorage } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -53,5 +54,6 @@ export {
   sendEmailLink,
   loginFirebase,
   child,
-  query
+  query,
+  getStorage,
 };
