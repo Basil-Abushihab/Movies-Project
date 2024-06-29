@@ -36,7 +36,7 @@ button{
     padding: 0rem 1rem;
     justify-content: center;
     align-items: center;
-    width: 13rem;
+    width: 11rem;
     border-width: 0rem;
     transition: 500ms ease;
     font-size: 1rem;
@@ -51,7 +51,7 @@ button{
 }
 @media (max-width: 768px){
     .hero-section{
-        letter-spacing: 0rem;
+        letter-spacing: 0.09rem;
         line-height: 1.4rem;
         text-wrap: wrap;
     }

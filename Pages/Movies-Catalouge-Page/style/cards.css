@@ -163,4 +163,47 @@ align-items: center;
         display: none;
       }
     
-} 
+} */
+@media (max-width: 1430px){
+    .card:nth-child(n+6) {
+        display: none;
+      }
+      .cards-container #group1.card:nth-child(5n){
+        display: none;
+      }
+}
+@media (max-width: 1220px){
+    .card:nth-child(n+5) {
+        display: none;
+      }
+      .cards-container #group1.card:nth-child(4n){
+        display: none;
+      }
+
+}
+@media (max-width: 980px){
+    .card:nth-child(n+4) {
+        display: none;
+      }
+      .cards-container #group1.card:nth-child(3n){
+        display: none;
+      }
+
+}
+@media (max-width: 750px){
+    .card:nth-child(n+3) {
+        display: none;
+      }
+      .cards-container #group1.card:nth-child(2n){
+        display: none;
+      }
+
+}
+@media (max-width: 512px){
+    .card:nth-child(n+2) {
+        display: none;
+      }
+      .cards-container #group1.card:nth-child(1n){
+        display: none;
+      }
+    }
