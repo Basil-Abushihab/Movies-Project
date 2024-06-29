@@ -11,7 +11,10 @@ function login(email, password) {
       let user = userCredential.user;
 
       if (isVerified(user)) {
-        location.replace("../../HomePage/Home.html");
+        localStorage.setItem("currentUser", JSON.stringify(user));
+        location.replace(
+          "http://127.0.0.1:5500/OrangeTasks/Movies-Project/Pages/Home-Page/Home.html"
+        );
       } else {
         alert(
           "Please check your email and make sure that you have verified this email"
