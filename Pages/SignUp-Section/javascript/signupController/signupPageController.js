@@ -1,21 +1,25 @@
-import { signup, createUser } from "./Signup";
-import { sendEmailLink,auth } from "../../../../Firebase-config/firebase-config";
-import { User } from "../../../../Data-Models/UserDataModel";
+import { signup, createUser } from "./Signup.js";
+import {
+  sendEmailLink,
+  auth,
+} from "../../../../Firebase-config/firebase-config.js";
+import { User } from "../../../../Data-Models/UserDataModel.js";
 
 function getDataFromSignupForm(event) {
-  let userData=document.getElementById("Signup-Form");
+  event.preventDefault();
+  let userData = event.target;
+  console.log(userData);
 
   let user = new User(
-    userData.FirstName,
-    userData.LastName,
-    userData.Email,
+    userData.firstName.value,
+    userData.lastName.value,
+    userData.email.value,
     "",
-    userData.Bio
+    userData.bio.value
   );
 
-  signup(auth,user.email, userData.password);
+  signup(user, userData.password.value);
 }
 
-
-let signupButton=document.getElementById("Signup-Button");
-signupForm.addEventListener("click",getDataFromSignupForm);
+let signupForm = document.getElementById("Signup-Form");
+signupForm.addEventListener("submit", getDataFromSignupForm);

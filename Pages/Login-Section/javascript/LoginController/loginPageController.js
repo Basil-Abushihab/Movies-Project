@@ -1,13 +1,11 @@
-import { login } from "./login";
+import { login } from "./login.js";
 
-function getDataFromLoginForm(){
-let userData=document.getElementById("Login-Form");
+function getDataFromLoginForm(event) {
+  event.preventDefault();
+  let userData = document.getElementById("Login-Form");
 
-login(userData.email,userData.password);
-
-
+  login(userData.email.value, userData.password.value);
 }
 
-
-let loginButton=document.getElementById("Login-Form");
-loginForm.addEventListener(submit,getDataFromLoginForm);
+let loginForm = document.getElementById("Login-Form");
+loginForm.addEventListener("submit", getDataFromLoginForm);
