@@ -31,5 +31,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   console.log(slideIndex-1);
   dots[slideIndex-1].className += " active";
-//   console.log(slides);
+  //   console.log(slides);
 }

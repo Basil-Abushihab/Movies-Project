@@ -6,6 +6,8 @@
     <title>Movies-Catalogue</title>
     <link rel="stylesheet" href="style/nav-bar.css">
     <link rel="stylesheet" href="style/hero-section.css">
+    <link rel="stylesheet" href="style/cards.css">
+    <script type="module" src="../../Firebase-config/firebase-config.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -46,7 +48,7 @@
     
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="Images/img1.jpg">
+      <img class="images-hero" src="Images/img1.jpg">
       <div class="text">Caption Text</div>
       <div class="bt-hero">
       <button class="play-bt"><i class="fa-solid fa-play" style="padding-right: 0.5rem;"></i> Play Now</button>
@@ -60,7 +62,7 @@
     
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <img src="Images/img2.jpg" style="width:100%">
+      <img class="images-hero" src="Images/img2.jpg" style="width:100%">
       <div class="text">Caption Two</div>
       <div class="bt-hero">
         <button class="play-bt"><i class="fa-solid fa-play" style="padding-right: 0.5rem;"></i> Play Now</button>
@@ -74,7 +76,7 @@
     
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <img src="Images/img3.jpg" style="width:100%">
+      <img class="images-hero" src="Images/img3.jpg" style="width:100%">
       <div class="text">Caption Three</div>
       <div class="bt-hero">
         <button class="play-bt"><i class="fa-solid fa-play" style="padding-right: 0.5rem;"></i> Play Now</button>
@@ -98,7 +100,7 @@
     <!-- code in html  -->
 
 
-    <form action="" class="example">
+    <form action="" class="example" id="search-form">
 
         <div>
         <p>Centered inside a form with max-width:</p>
@@ -114,19 +116,19 @@
             <option value="German">German</option>
             <option value="Spanish">Spanish</option>
           </select>
-          <select id="options" name="cars">
+          <select id="options" >
             <option selected hidden>ratings</option>
             <option value="2345Movie">2345Movie</option>
             <option value="2345Movie">2345Movie</option>
             <option value="2345Movie">2345Movie</option>
           </select>
-          <select id="options" name="cars">
+          <select id="options" >
             <option selected hidden>production year</option>
             <option value="2345Movie">2345Movie</option>
             <option value="2345Movie">2345Movie</option>
             <option value="2345Movie">2345Movie</option>
           </select>
-          <select id="options" name="cars">
+          <select id="options">
             <option selected hidden>genre</option>
             <option value="2345Movie">2345Movie</option>
             <option value="2345Movie">2345Movie</option>
@@ -138,7 +140,10 @@
     </form>
 
 
+    
+ <div class="cards-container"></div>
 
 <script src="hero-section.js"></script>
+<script type="module" src="get-Movies-data.js"></script>
 </body>
 </html>
