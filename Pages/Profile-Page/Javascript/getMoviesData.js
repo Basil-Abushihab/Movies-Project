@@ -1,13 +1,16 @@
-import { database, ref, onValue } from '../firebase.js';
+import { database, retrieveData, reference } from "../../../Firebase-config/firebase-config.js";
 
 // Reference to the Movies node in the database
-const moviesRef = ref(database, 'Movies');
 
-// Get the container for the cards
-const cardsContainer = document.getElementById('cards-container');
+
+
+
 
 // Function to create a card
 function createCard(movie) {
+    
+    const cardsContainer = document.getElementById('cards-container');
+const profile = document.getElementById('profile-container')
     const card = document.createElement('div');
     card.className = 'card';
 
@@ -49,14 +52,29 @@ function createCard(movie) {
 }
 
 // Fetch data from Firebase and create cards
-onValue(moviesRef, (snapshot) => {
-    cardsContainer.innerHTML = ''; // Clear existing cards
-    const movies = snapshot.val();
-    for (const key in movies) {
-        if (movies.hasOwnProperty(key)) {
-            const movie = movies[key];
-            const card = createCard(movie);
-            cardsContainer.appendChild(card);
-        }
+
+function getMoviesData(){
+    const moviesRef = reference(database, 'Movies/');
+retrieveData(moviesRef,(snapshot)=>{
+    let movieData=snapshot.val();
+    if(movieData!=null){
+        createCard()
     }
-});
+    else{
+        alert("Error");
+    }
+})
+}
+const movieFromLocalStorage = JSON.parse(localStorage.getItem('currentUser'));
+// console.log(movieFromLocalStorage)
+if (movieFromLocalStorage) {
+    // Generate a new key for the new movie
+    const newMovieRef = reference(database, 'Movies/' + .Name);
+    // Store the movie object in FirebasemovieFromLocalStorage
+    set(newMovieRef, movieFromLocalStorage).then(() => {
+        console.log("Movie stored in Firebase successfully.");
+    }).catch((error) => {
+        console.error("Error storing movie in Firebase: ", error);
+    });
+}
+
