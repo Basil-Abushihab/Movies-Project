@@ -178,39 +178,6 @@ body {
     margin-bottom: 20px;
 }
 
-.movie-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.movie-card {
-    background: #0d1b2a;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    width: 200px;
-}
-
-.movie-card img {
-    width: 100%;
-    height: auto;
-}
-
-.movie-info {
-    padding: 10px;
-}
-
-.movie-info h3 {
-    font-size: 18px;
-    margin: 0;
-}
-
-.movie-info p {
-    font-size: 14px;
-    color: #ccc;
-}
-
 .slash {
     display: flex;
   }
