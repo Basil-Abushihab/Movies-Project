@@ -6,16 +6,18 @@ import {
   retrieveData,
   sendEmailLink,
 } from "../../../../Firebase-config/firebase-config.js";
+import { addUserData } from "../CreateUserController/CreateUser.js";
 
 function signup(user, password) {
-  console.log(password);
-  console.log(user);
   createUser(auth, user.email, password)
     .then((userCredential) => {
       sendEmailLink(auth.currentUser).then(() => {
         alert(
           "an email verification link has been sent to this account please check your inbox in order to login"
         );
+        user.userID = auth.currentUser.uid;
+
+        addUserData(user);
       });
     })
     .catch((error) => {

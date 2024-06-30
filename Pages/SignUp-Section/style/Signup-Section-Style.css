@@ -16,7 +16,7 @@ html {
 }
 #Signup-Fields{
     width: 30rem;
-    height: 1200px;
+    height: 1300px;
     background-color:#2C3E50 ;
     border-top-left-radius:12px ;
     border-bottom-left-radius:12px ;
@@ -32,13 +32,13 @@ html {
     grid-template-columns: 1fr; 
     grid-template-rows: 1fr; 
     width: 30rem;
-            height: 1200px;
+            height: 1300px;
 }
 .movie-images{
     grid-column: 1 / -1; 
     grid-row: 1 / -1;
     width: 30rem;
-    height: 1200px;
+    height: 1300px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,7 +65,7 @@ html {
     
     
 }
-.label{
+label{
     color: #CDCACA;
     font-size: 1.1rem;
 }
@@ -87,7 +87,12 @@ html {
     padding: 12px 20px;
 }
 
-
+#Image-Select{
+    border: #2C3E50;
+    background-color: #1E2935;
+    color: white;
+    
+}
 
 
 @keyframes imageFade{
