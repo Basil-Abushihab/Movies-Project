@@ -1,4 +1,4 @@
-
+/* 
 .container-cards{
     display: flex;
     flex-direction: row;
@@ -180,4 +180,37 @@
 }
 
 
+ */
+ section {
 
+    
+    padding: 140px 80px 32px;
+}
+ .card1{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 60.06%;
+    height: 20.125rem;
+    background-color: #2C3E50;
+    color: white;
+    padding: 2rem;
+    margin: 3rem;
+}
+.actor{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../imges/heros.jpg');
+    margin: .5rem;
+    height: 8rem;
+    border-radius: 12%;
+}
+.a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
