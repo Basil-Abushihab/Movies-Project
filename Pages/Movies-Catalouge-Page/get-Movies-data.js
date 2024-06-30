@@ -65,7 +65,7 @@ function createMovieCard(movie, movieId) {
     `;
     card.style.backgroundImage="movie.imageHorizontal"
     card.addEventListener('click', () => {
-        sessionStorage.setItem('Name-Movie', movieId); 
+        localStorage.setItem('Name-Movie', movieId); 
         window.location.href = `http://127.0.0.1:5500/Pages/Movie-Details-Page/Movie-Details.html`; 
     });
     return card;
