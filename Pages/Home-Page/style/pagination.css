@@ -16,7 +16,8 @@ body {
     justify-content: end;
     align-items: center;
     padding: 0;
-    margin-right: 3rem;
+    margin-right: 10rem;
+    margin-top: 2rem;
 }
 .pagination{
     display: flex;
@@ -24,7 +25,7 @@ body {
     align-items: center;
     background-color: #2C3E50;
     padding: 0.5rem 1.5rem;
-    width: 8rem;
+    width: 10rem;
     border-radius: 8px;
     border-color: black;
     border-width: 3px;
@@ -34,7 +35,8 @@ body {
     text-decoration: none;
     padding: 0.2rem;
     font-weight: 600;
-    font-size: large;
+    font-size: 2rem;
+    
 
 }
 .pagination .arrow{
@@ -50,7 +52,7 @@ body {
 .pagination a.active{
     color:#1E84E6;
     font-weight: 900;
-    font-size:x-large;
+    font-size:2rem;
     background-color: transparent;
 
 }

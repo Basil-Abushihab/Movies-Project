@@ -28,7 +28,7 @@ body {
 .hero-section p span{
     font-weight: 900;
 }
-.hero-section button{
+button{
     border-radius: 8px;
     background-color: #1E84E6;
     color: white;
@@ -39,6 +39,7 @@ body {
     width: 13rem;
     border-width: 0rem;
     transition: 500ms ease;
+    font-size: 1rem;
 }
 .hero-section button:hover{
     transform: scale(1.1);

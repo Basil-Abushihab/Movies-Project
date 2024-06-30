@@ -1,0 +1,134 @@
+#Movie-Details-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Movie-Details-Section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Left-Sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70rem;
+}
+
+#Staring-Section{
+    background-color: #2C3E50;
+    height: 15rem;
+    width: 70rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+#Section-Title{
+    width: 70rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#999999 ;
+    margin-bottom: 2rem;
+}
+
+#Button-Controls{
+    margin-left:50rem
+}
+.Next-Previous-Buttons{
+border-radius: 50px;
+border: none;
+cursor: pointer;
+background-color: #1E2935;
+width: 2.5rem;
+height: 2.5rem;
+margin-left: 1rem;
+transform: none;
+transition: all 0.3s;
+}
+
+.Next-Previous-Buttons:hover{
+    transform: scale(1.2);
+}
+.Title{
+    font-size: 1.2rem;
+    color: #999999;
+}
+.Staring-Images{
+    width: 1.7rem;
+}
+
+#Star-Slider{
+    overflow-x: hidden;
+    width: 70rem;
+    display: flex;
+    justify-content: center;
+}
+.Star-Cards-Container{
+    width: 60rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Star-Cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/ba.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    height: 9rem;
+    width: 14rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#Reviews-Section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2C3E50;
+    margin-top: 3rem;
+    width: 70rem;
+    border-radius: 12px;
+    height: 50rem;
+    margin-bottom: 4rem;
+}
+
+#Reviews-Title-Section{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60rem;
+}
+
+#Add-Review-Button{
+    height: 3rem;
+    width: 10rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #1E2935;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 3rem;
+
+}
+#Review-Submit{
+    display: flex;
+    
+}
