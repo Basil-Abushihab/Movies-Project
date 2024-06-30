@@ -12,9 +12,7 @@ function login(email, password) {
       let user = userCredential.user;
 
       if (isVerified(user)) {
-        localStorage.setItem("currentUser", JSON.stringify(user));
-        let user=JSON.parse(localStorage.getItem("currentUser"))
-        user.uid
+        sessionStorage.setItem("currentUser", JSON.stringify(user.uid));
         location.replace(
           "http://127.0.0.1:5500/OrangeTasks/Movies-Project/Pages/Home-Page/Home.html"
         );
