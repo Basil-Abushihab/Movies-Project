@@ -1,7 +1,7 @@
 import {
   auth,
   loginFirebase,
-  retrieveData
+  retrieveData,
 } from "../../../../Firebase-config/firebase-config.js";
 
 function login(email, password) {
